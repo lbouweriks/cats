@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Cats </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+      <header>
+        <h1 class="headertext">Cats!</h1>
+<img class="headercat" src="3683.jpg" alt="">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Info</a></li>
+            <li><a href="index.html">Pictures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="trim">
+        <img class="headerimg" src="imgheader.jpg" alt="">
+      </div> </header>
+        <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Phone: <input type="tel" name="phone" /></label>
+              </p>
+              <p>
+                <label>DoB: <input type="date" name="dob" /></label>
+              </p>
+              <p>      
+                <div>
+                  <input type="radio" name="gender" value="Male"
+                        checked>
+                    <label for="male">Male</label>
+               </div>
+                <div>
+                    <input type="radio"  name="gender" value="Female">
+                 <label for="female">Female</label>
+              </div>
+            <div>    
+              </p>
+              <p>
+                <label>Colour Cat: <input type="color" id="head" name="head"
+                    value="#e66465"></label>
+              </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <label>Photo Cat: <input type="file" name="photo" /></label>   
+              </p>
+              <p>
+                <label>Website: <input type="url" name="website" /></label>   
+              </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+            <p>
+                <button type="reset">Reset</button>
+              </p>
+          </form>
+          </main>
+        <footer><p class="footertext">2021</p></footer>
+    </body>
+</html>
+

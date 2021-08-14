@@ -1,51 +1,122 @@
-body{
-    background-color:black;
-    margin: 0 0 0 0; 
+body {
+  background-color: black;
+  margin: 0 0 0 0;
 }
 
-.headercat{
-    border-radius:50%;
-    width:15rem;
-    height:15rem;   
-    display: block;
-    margin: 3% auto 0 auto;
-    border: 2px solid black;   
+p {
+  color: white;
 }
 
+label {
+  color: white;
+}
+form {
+  margin-top: 5%;
+  text-align: center;
+}
+.headercat {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  margin: 3% auto 0 auto;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.headertext {
+  z-index: 2;
+  position: absolute;
+  top: 8.25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 li {
-    display: inline;
+  display: inline;
+}
+
+a {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+main {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  padding-bottom: 3%;
+}
+
+.content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 25%;
+  flex: 100%;
+}
+
+.headerimg {
+  min-width: 100%;
+}
+
+.trim {
+  max-height: 300px;
+  overflow: hidden;
+}
+.item {
+  margin-top: 10%;
+  color: white;
+  text-align: center;
+}
+
+.item img {
+  border-radius: 25%;
+  width: 275px;
+  height: 275px;
+  border: 2px solid white;
+}
+
+footer {
+  height: 70px;
+  background-color: red;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+iframe {
+  display: block;
+  margin: 10% auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  a {
+    margin-left: 17.5%;
+    line-height: 200%;
+    font-size: 1.3rem;
   }
 
-  a{
-      color:white;
-      font-size:1.4rem;
-      margin-left:10%;
+  .trim {
+    max-height: 450px;
+  }
+
+  .item {
+    flex: 33%;
+  }
 }
-
-a:hover{
-    color:lightgray;
-}
-
-.headerimg{
-    min-width:100%; 
-}
-
-.trim{
-    max-height:300px;
-    overflow: hidden;
-}
-
-@media (min-width: 1024px) {
-    a{
-        margin-left:17.5%; 
-        line-height:200%;
-        color:red;
-        font-size:1.3rem;
-    }
-    .trim{
-        max-height:450px;
-    }
-}
-
-
